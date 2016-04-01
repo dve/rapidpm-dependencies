@@ -90,6 +90,7 @@
 
     <!--<jacoco.version>0.7.6.201602180812</jacoco.version>-->
     <jacoco.version>0.7.5.201505241946</jacoco.version>
+    <junit.gen5.version>5.0.0-SNAPSHOT</junit.gen5.version>
   </properties>
 
   <modules>
@@ -499,9 +500,9 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <groupId>org.junit</groupId>
+        <artifactId>junit5-api</artifactId>
+        <version>${junit.gen5.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -639,8 +640,8 @@
 
     <dependency>
       <!--TDD-->
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <groupId>org.junit</groupId>
+      <artifactId>junit5-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
