@@ -512,6 +512,18 @@
         <scope>test</scope>
       </dependency>
       <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit5-engine</artifactId>
+        <version>${junit.gen5.version}</version>
+        <scope>test runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit4-runner</artifactId>
+        <version>${junit.gen5.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>org.pitest</groupId>
         <artifactId>pitest</artifactId>
         <version>1.1.9</version>
@@ -1170,6 +1182,13 @@
               <!--<testSourceDirectory>${project.build.directory}/generated-test-sources/test-annotations</testSourceDirectory>-->
               <!--<classesDirectory>target/generated-classes/emma/classes</classesDirectory>-->
             </configuration>
+            <dependencies>
+              <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>surefire-junit5</artifactId>
+                <version>${junit.gen5.version}</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
