@@ -500,6 +500,12 @@
         <scope>test</scope>
       </dependency>
       <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit5-api</artifactId>
         <version>${junit.gen5.version}</version>
@@ -637,7 +643,12 @@
       <artifactId>kotlin-runtime</artifactId>
     </dependency>
 
-
+    <dependency>
+      <!--TDD-->
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <!--TDD-->
       <groupId>org.junit</groupId>
