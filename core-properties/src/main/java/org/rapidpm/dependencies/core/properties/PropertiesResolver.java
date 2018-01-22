@@ -21,7 +21,7 @@ public class PropertiesResolver implements HasLogger {
 
   /**
    * Creates a {@link Properties} object from different sources. The sources are:
-   * 
+   *
    * <ol>
    * <li>the root of the classpath</li>
    * <li>the current working directory</li>
@@ -30,7 +30,7 @@ public class PropertiesResolver implements HasLogger {
    * <ol>
    * <br>
    * Properties defined in the higher sources override the ones defined in lower sources.
-   * 
+   *
    * @param name the name of the properties file - without the <code>.properties</code> file
    *        extension
    * @return the merged {@link Properties} object
